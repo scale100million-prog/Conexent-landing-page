@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF6B00;
+  --color-accent-color: #FF6B00;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-card-border: #1E1E2F;
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-text-primary bg-[#050508] antialiased selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+@layer components {
+  .vsl-container {
+    @apply w-full mx-auto px-4 sm:px-6 pt-6 sm:pt-[80px] pb-8 sm:pb-[80px];
+  }
+
+  .btn-cta {
+    @apply inline-flex items-center justify-center px-[52px] py-[18px] text-[16px] font-bold text-[#050508] transition-all bg-accent-color rounded-full shadow-[0_8px_32px_rgba(255,107,0,0.3)] hover:scale-[1.02] hover:shadow-[0_12px_44px_rgba(255,107,0,0.45)] active:scale-[0.98] w-auto mx-auto uppercase tracking-wider;
+  }
+
+  .badge-pill {
+    @apply inline-flex items-center gap-2.5 px-6 py-[10px] rounded-full bg-[#12121E] border border-white/5 shadow-[0_2px_12px_rgba(0,0,0,0.4)] text-[#94A3B8] font-medium text-[13px] mx-auto;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-5 px-5 py-[6px] rounded-full bg-[#12121E] border border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#9090AA] mx-auto mb-5;
+  }
+  
+  .heading-vsl {
+    @apply text-[19px] min-[375px]:text-[21px] sm:text-[34px] md:text-[42px] lg:text-[48px] font-semibold tracking-[-0.02em] min-[375px]:tracking-[-0.03em] leading-[1.25] min-[375px]:leading-[1.15] text-[#E5E7EB] text-center max-w-[1050px] mx-auto;
+  }
+  
+  .subheading-vsl {
+    @apply text-[13px] min-[375px]:text-[14px] sm:text-[15.5px] md:text-[17px] text-[#E2E8F0] leading-[1.65] text-center font-normal tracking-[0.015em] max-w-[850px] mx-auto;
+  }
+
+  .section-heading {
+    @apply text-[24px] sm:text-[30px] md:text-[38px] lg:text-[44px] font-semibold tracking-[-0.03em] leading-[1.14] text-[#E5E7EB] text-center max-w-[960px] mx-auto;
+  }
+
+  .body-text {
+    @apply text-[14px] sm:text-[15px] md:text-[16px] text-[#D1D5DB] leading-[1.65] text-center font-normal tracking-[0.01em] max-w-[700px] mx-auto;
+  }
+
+  .card-testimonial {
+    @apply bg-[#11111A] border border-white/5 rounded-[32px] p-[36px_28px] shadow-[0_4px_30px_rgba(0,0,0,0.3)] transition-all;
+  }
+
+  .card-testimonial-dark {
+    @apply bg-[#181826] text-white border-t-[3px] border-accent-color rounded-[32px] p-[36px_28px] shadow-[0_8px_32px_rgba(255,107,0,0.15)] transition-all md:scale-105;
+  }
+
+  .video-container {
+    @apply w-full max-w-[960px] aspect-video bg-black rounded-[20px] shadow-[0_20px_60px_rgba(0,0,0,0.5)] overflow-hidden border-[3px] border-white/10 mx-auto relative;
+  }
+}
+
+.ambient-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.08) 0%, transparent 70%);
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
