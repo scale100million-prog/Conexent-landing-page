@@ -84,7 +84,7 @@ export default function About({ onCtaClick }: AboutProps) {
                   APPLY NOW!
                 </span>
                 <span className="text-white font-bold uppercase tracking-[0.02em] text-[10px] sm:text-[11.5px] md:text-[12px] opacity-95">
-                  (LIMITED TO ONLY 8 NEW CLIENTS PER MONTH)
+                  (LIMITED TO ONLY 3 NEW CLIENTS PER MONTH)
                 </span>
               </div>
             </motion.button>

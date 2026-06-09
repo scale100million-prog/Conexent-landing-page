@@ -88,6 +88,30 @@ const caseStudies: CaseStudy[] = [
   }
 ];
 
+const testimonials = [
+  {
+    name: "Akash Verma",
+    photo: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/Akash%20verma.jpeg",
+    badge: "Fashion & Lifestyle Brand",
+    designation: "Founder, Thyne",
+    quote: "Conexsent transformed how our brand is perceived. Their campaigns improved our visual presence, drove stronger engagement, increased website traffic, and delivered measurable results from our ad campaigns."
+  },
+  {
+    name: "Indranil Chakraborty",
+    photo: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/indranil%20chakraborty.jpeg",
+    badge: "AI-Powered Production Studio",
+    designation: "Founder & CEO, Scene Matter Studios",
+    quote: "Their work was invaluable in establishing our visual presence during our AI-production journey. They built credibility, improved campaign performance, and helped us attract new clients consistently."
+  },
+  {
+    name: "Rashmi Dhankar",
+    photo: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/Rashmi%20Dhankar.jpeg",
+    badge: "D2C Fashion Brand",
+    designation: "Founder, Gladragz",
+    quote: "Partnering with Conexsent was one of the best decisions we made. They helped us produce premium content at scale, strengthened our brand image, and drove significantly stronger marketing results."
+  }
+];
+
 interface SocialProofProps {
   onCtaClick: () => void;
 }
@@ -126,6 +150,64 @@ export default function SocialProof({ onCtaClick }: SocialProofProps) {
             <span className="inline text-[13.5px] min-[375px]:text-[14.5px] sm:text-[16px] font-medium text-slate-100 tracking-[0.015em] underline decoration-primary decoration-[1.5px] underline-offset-[7px] sm:underline-offset-[9px] leading-[2.1] sm:leading-[2.4]">
               Built in India. Proven Worldwide. Trusted by Ecommerce Founders.
             </span>
+          </div>
+
+          {/* Testimonials Section */}
+          <div className="w-full flex flex-col items-center mt-4 mb-24 max-w-[1240px] mx-auto px-4 sm:px-0">
+            <motion.h3 
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-[26px] min-[375px]:text-[28px] sm:text-[34px] md:text-[38px] font-bold text-white tracking-tight mb-12 text-center"
+            >
+              What Our Clients Say
+            </motion.h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full items-stretch">
+              {testimonials.map((testimonial, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.15 }}
+                  className="flex flex-col items-center bg-[#11111A]/90 hover:bg-[#151522] border border-[#FF6B00]/15 hover:border-primary/45 transition-all duration-300 rounded-[32px] p-6 sm:p-8 relative shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_44px_rgba(255,107,0,0.15)] text-center group"
+                >
+                  {/* Profile Photo Area with overlapping Badge */}
+                  <div className="relative mb-8 flex flex-col items-center">
+                    <div className="w-[170px] h-[170px] sm:w-[190px] sm:h-[190px] rounded-[24px] overflow-hidden border border-white/[0.06] bg-[#161622] relative shadow-inner">
+                      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent pointer-events-none z-1" />
+                      <img 
+                        src={testimonial.photo} 
+                        alt={testimonial.name} 
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.05]"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                    {/* Badge overlapping bottom of photo */}
+                    <div className="absolute -bottom-2 bg-[#FF6B00] text-white text-[9px] sm:text-[9.5px] font-bold uppercase tracking-[0.05em] px-4 py-1.5 rounded-lg border border-primary/20 shadow-[0_4px_14px_rgba(255,107,0,0.3)] whitespace-nowrap select-none z-10">
+                      {testimonial.badge}
+                    </div>
+                  </div>
+
+                  {/* Name */}
+                  <h4 className="font-extrabold text-[19px] sm:text-[21px] text-white tracking-tight leading-none mb-1.5 mt-3">
+                    {testimonial.name}
+                  </h4>
+
+                  {/* Designation */}
+                  <p className="text-[12.5px] sm:text-[13px] text-zinc-400 font-medium font-sans mb-6 leading-relaxed">
+                    {testimonial.designation}
+                  </p>
+
+                  {/* Quote text */}
+                  <p className="text-zinc-300 text-[13px] sm:text-[13.5px] italic leading-relaxed font-sans mt-auto border-t border-white/[0.04] pt-5 w-full">
+                    "{testimonial.quote}"
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px] mb-[44px] items-stretch w-full max-w-[1240px] text-left">
@@ -314,7 +396,7 @@ export default function SocialProof({ onCtaClick }: SocialProofProps) {
                   APPLY NOW!
                 </span>
                 <span className="text-white font-bold uppercase tracking-[0.02em] text-[10px] sm:text-[11.5px] md:text-[12px] opacity-95">
-                  (LIMITED TO ONLY 8 NEW CLIENTS PER MONTH)
+                  (LIMITED TO ONLY 3 NEW CLIENTS PER MONTH)
                 </span>
               </div>
             </motion.button>

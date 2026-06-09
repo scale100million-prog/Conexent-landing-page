@@ -57,7 +57,7 @@ export default function StickyFooter({ onCtaClick }: StickyFooterProps) {
               APPLY NOW!
             </span>
             <span className="text-white font-bold uppercase tracking-[0.02em] text-[9.5px] sm:text-[10px] md:text-[11px] opacity-95 leading-none">
-              (LIMITED TO ONLY 8 NEW CLIENTS PER MONTH)
+              (LIMITED TO ONLY 3 NEW CLIENTS PER MONTH)
             </span>
           </div>
         </button>
