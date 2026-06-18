@@ -44,7 +44,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
           {/* Headline */}
           <h1 className="heading-vsl mb-3 sm:mb-[24px]">
             Spending on Ads Every Month and Still{' '}
-            <span className="text-primary">Stuck at ₹2–3L</span> in Sales?{' '}
+            <span className="text-primary">Stuck at ₹2–3L</span> in Sales?<br className="block md:hidden" />{' '}
             <span>
               Here Is How Fashion, Skincare and Ecommerce Founders Are Scaling to{' '}
               <span className="text-primary">₹1–2 Crore/Year</span> –{' '}
@@ -54,8 +54,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
           {/* Subheadline */}
           <p className="subheading-vsl mb-6 sm:mb-[48px] !text-[#E2E8F0]">
-            We find the exact moment your buyer loses trust and leaves without purchasing. Then we rebuild your brand around the sale — <span className="text-primary font-semibold">done for you</span>, start to finish. If sales do not improve in 30 days, we keep working at no extra cost. Proven across{' '}
-            <span className="text-primary font-semibold">765+ brands in 10 countries</span>.
+            We find why buyers leave without purchasing and fix it in 30 Days. <span className="text-primary font-semibold">Done for you.</span> Proven across <span className="text-primary font-semibold">765+ brands.</span> <span className="text-primary font-semibold">₹100Cr+ Generated.</span>
           </p>
 
           {/* Video Container Wrapper with Handwritten Hint */}
