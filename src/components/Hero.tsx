@@ -16,7 +16,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="hidden sm:block w-full bg-[#000000] border-b border-white/[0.08] py-3.5 px-4 text-center relative z-20">
         <div className="max-w-[1240px] mx-auto flex items-center justify-center">
           <p className="text-[15px] md:text-[16px] font-medium text-white/95 tracking-[0.01em] sm:tracking-[0.02em]">
-            Only for Fashion, Skincare and Ecommerce Founders Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–3L/Month</span>
+            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="block sm:hidden px-4 pt-4 relative z-20">
         <div className="w-full bg-[#000000] border border-white/10 rounded-[14px] py-3 px-4 text-center shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
           <p className="text-[12px] min-[375px]:text-[13px] font-medium text-white/95 tracking-[0.012em] leading-normal">
-            Only for Fashion, Skincare & Ecommerce Founders Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–3L/Month</span>
+            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
           </p>
         </div>
       </div>
@@ -43,18 +43,12 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
           {/* Headline */}
           <h1 className="heading-vsl mb-3 sm:mb-[24px]">
-            Spending on Ads Every Month and Still{' '}
-            <span className="text-primary">Stuck at ₹2–3L</span> in Sales?<br className="block md:hidden" />{' '}
-            <span>
-              Here Is How Fashion, Skincare and Ecommerce Founders Are Scaling to{' '}
-              <span className="text-primary">₹1–2 Crore/Year</span> –{' '}
-              <span className="text-primary">Without Wasting Money on Ads.</span>
-            </span>
+            Scale to <span className="text-primary">₹1CR to ₹2CR/month</span> profitably <span className="text-primary">without blowing up CAC.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="subheading-vsl mb-6 sm:mb-[48px] !text-[#E2E8F0]">
-            We find why buyers leave without purchasing and fix it in 30 Days. <span className="text-primary font-semibold">Done for you.</span> Proven across <span className="text-primary font-semibold">765+ brands.</span> <span className="text-primary font-semibold">₹100Cr+ Generated.</span>
+            We build growth engines that increase revenue and profitability together. <span className="text-primary font-semibold">Done for you.</span> Proven across <span className="text-primary font-semibold">765+ brands.</span> <span className="text-primary font-semibold">₹100Cr+ Generated.</span>
           </p>
 
           {/* Video Container Wrapper with Handwritten Hint */}
