@@ -16,7 +16,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="hidden sm:block w-full bg-[#000000] border-b border-white/[0.08] py-3.5 px-4 text-center relative z-20">
         <div className="max-w-[1240px] mx-auto flex items-center justify-center">
           <p className="text-[15px] md:text-[16px] font-medium text-white/95 tracking-[0.01em] sm:tracking-[0.02em]">
-            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
+            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹3–5L/Month</span>
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="block sm:hidden px-4 pt-4 relative z-20">
         <div className="w-full bg-[#000000] border border-white/10 rounded-[14px] py-3 px-4 text-center shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
           <p className="text-[12px] min-[375px]:text-[13px] font-medium text-white/95 tracking-[0.012em] leading-normal">
-            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
+            Only for D2C Brands Stuck at <span className="whitespace-nowrap text-white font-semibold">₹3–5L/Month</span>
           </p>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
           {/* Headline */}
           <h1 className="heading-vsl mb-3 sm:mb-[24px]">
-            Scale to <span className="text-primary">₹1CR to ₹2CR/month</span> profitably <span className="text-primary">without blowing up CAC.</span>
+            Scale to <span className="text-primary">₹1-2 Crore/Month</span> profitably <span className="text-primary">without blowing up CAC.</span>
           </h1>
 
           {/* Subheadline */}
