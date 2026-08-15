@@ -48,7 +48,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
 
           {/* Subheadline */}
           <p className="subheading-vsl mb-6 sm:mb-[48px] !text-[#E2E8F0]">
-            We find why buyers leave your store without purchasing and <span className="text-primary font-semibold">fix it in 30 days.</span> Done for you. <span className="text-primary font-semibold">Not an ads agency.</span> Proven across <span className="text-primary font-semibold">765+ brands.</span> <span className="text-primary font-semibold">₹100Cr+ Generated.</span>
+            We find why buyers leave your store without purchasing and <span className="text-primary font-semibold">fix it in 30 days.</span> Done for you. Proven across <span className="text-primary font-semibold">765+ brands.</span> <span className="text-primary font-semibold">₹100Cr+ Generated.</span>
           </p>
 
           {/* Video Container Wrapper with Handwritten Hint */}
