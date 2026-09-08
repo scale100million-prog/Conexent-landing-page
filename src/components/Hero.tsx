@@ -16,7 +16,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="hidden sm:block w-full bg-[#000000] border-b border-white/[0.08] py-3.5 px-4 text-center relative z-20">
         <div className="max-w-[1240px] mx-auto flex items-center justify-center">
           <p className="text-[15px] md:text-[16px] font-medium text-white/95 tracking-[0.01em] sm:tracking-[0.02em]">
-            Only for Fashion, Skincare & Ecommerce Founders Already Getting Traffic but Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
+            Only for Fashion, Skincare & Ecommerce Founders Already Running Ads Who Want to Fix Their Store Conversion
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="block sm:hidden px-4 pt-4 relative z-20">
         <div className="w-full bg-[#000000] border border-white/10 rounded-[14px] py-3 px-4 text-center shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
           <p className="text-[12px] min-[375px]:text-[13px] font-medium text-white/95 tracking-[0.012em] leading-normal">
-            Only for Fashion, Skincare & Ecommerce Founders Already Getting Traffic but Stuck at <span className="whitespace-nowrap text-white font-semibold">₹2–5L/Month</span>
+            Only for Fashion, Skincare & Ecommerce Founders Already Running Ads Who Want to Fix Their Store Conversion
           </p>
         </div>
       </div>
